@@ -1,12 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './components/Home';
+import AboutMe from './components/AboutMe';
+import Experience from './components/Experience';
+import NavBar from './components/NavBar';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>hola</h1>
-      </header>
-    </div>
+
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/acercade' element={<AboutMe />} />
+        <Route path='/experiencia' element={<Experience />} />
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
