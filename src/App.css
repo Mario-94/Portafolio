@@ -7,28 +7,42 @@
   list-style: none;
   box-sizing: border-box;
 }
+/* NOTE:Seccion para el navBar */
 
-.content-navBar {
-  height: 80px;
-  width: 100%;
+.colorText {
+  color: #fffffe !important;
 }
-.nav-menu ul {
+
+.colorText span {
+  transition: color 0.2s ease-in-out; /* Transición suave en el cambio de color */
+}
+
+.colorText span:hover {
+  color: #f9bc60; /* Cambio de color al hacer hover */
+}
+/* NOTE:Seccion para el Home */
+.contentHome {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.containerHome {
+  border: 1px solid white;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
-.nav-menu li {
-  margin-right: 1rem;
+.containerHome p {
+  color: #abd1c6 !important;
+  text-align: left;
 }
-.nav-menu a {
-  color: #fffffe;
+.containerImgHome {
+  position: relative;
+  width: 100%;
+  border: 1px solid beige;
+  text-align: right;
 }
-
-.menu-icon img {
-  width: 30px;
-  height: 30px;
-  border-radius: 2px;
-}
-.menu-icon,
-#check {
-  display: none;
+.avatarImg {
+  width: 300px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: fill;
 }
