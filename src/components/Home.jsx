@@ -4,8 +4,9 @@ const Home = () => {
   return (
     <section className="contentHome " name="pagehome">
       <div className="containerHome">
-        <div>
+        <div className="containerTextHome">
           <h1>Mario Alberto Garcia Sanchez</h1>
+          <span className="">Desarrollador web front-end</span>
           <p>
             Como apasionado desarrollador de software front-end, me especializo
             en la creación de experiencias web excepcionales y altamente

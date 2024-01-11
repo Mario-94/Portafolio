@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-sm p-3 navBar">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-sm containerNavBar">
+      <div className="container-fluid ">
         <Link className="navbar-brand colorText" to={"/"}>
           <h3>
             <span>Mario-94</span>

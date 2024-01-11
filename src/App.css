@@ -20,29 +20,53 @@
 .colorText span:hover {
   color: #f9bc60; /* Cambio de color al hacer hover */
 }
+.containerNavBar {
+  padding-left: 1.2rem !important;
+  padding-right: 1.2rem !important;
+  padding-bottom: 3rem !important;
+}
 /* NOTE:Seccion para el Home */
 .contentHome {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-.containerHome {
-  border: 1px solid white;
+.containerTextHome {
+  width: 300%;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.containerHome {
+  display: flex;
+  height: calc(100vh - 350px);
   justify-content: space-between;
 }
 .containerHome p {
+  width: 100%;
+
   color: #abd1c6 !important;
   text-align: left;
 }
+.containerHome span,
+h1 {
+  padding-bottom: 0.5rem;
+}
+
 .containerImgHome {
+  background-color: #fffffe !important;
   position: relative;
   width: 100%;
-  border: 1px solid beige;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .avatarImg {
-  width: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  aspect-ratio: 1/1;
   object-fit: fill;
+  object-position: center;
+
+  border: 10px solid transparent;
 }
