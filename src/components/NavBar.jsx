@@ -32,11 +32,7 @@ const NavBar = () => {
                 <span>Inicio</span>
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link colorText" to={"acercade"}>
-                <span>Acerca de</span>
-              </Link>
-            </li>
+
             <li className="nav-item">
               <Link className="nav-link colorText" to={"experiencia"}>
                 <span>Experiencia laboral</span>

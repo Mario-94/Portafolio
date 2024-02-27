@@ -1,72 +1,150 @@
 /* en app pondremos los estilos bases como son los del navBar */
 /* seccion para el navBar */
+/* Estilos base */
 * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
 }
-/* NOTE:Seccion para el navBar */
 
+/* Estilos para el texto con transición de color */
 .colorText {
   color: #fffffe !important;
 }
-
 .colorText span {
-  transition: color 0.2s ease-in-out; /* Transición suave en el cambio de color */
+  transition: color 0.2s ease-in-out !important;
+}
+.colorText span:hover {
+  color: #f9bc60 !important;
 }
 
-.colorText span:hover {
-  color: #f9bc60; /* Cambio de color al hacer hover */
-}
+/* Estilos para el NavBar */
 .containerNavBar {
   padding-left: 1.2rem !important;
   padding-right: 1.2rem !important;
   padding-bottom: 3rem !important;
+  padding-top: 1.2rem !important;
 }
-/* NOTE:Seccion para el Home */
+.containerNavBar li {
+  padding: 5px !important;
+}
+/* Seccion para el contenido de home */
 .contentHome {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 15px !important;
 }
-.containerTextHome {
-  width: 300%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .containerHome {
-  display: flex;
-  height: calc(100vh - 350px);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px !important;
 }
 .containerHome p {
-  width: 100%;
-
   color: #abd1c6 !important;
-  text-align: left;
 }
-.containerHome span,
-h1 {
-  padding-bottom: 0.5rem;
+.AcercaMi a {
+  color: inherit !important; /* Hereda el color del texto del párrafo */
 }
 
+.containerTextHome {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .containerImgHome {
-  background-color: #fffffe !important;
-  position: relative;
+  display: flex;
+}
+.avatarImg {
   width: 100%;
+  height: auto;
+  object-fit: fill;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+/* 
+.sliderTecnologies {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid red;
+}
+.sliderTecnologies .slide-track {
+  display: flex;
+  animation: scroll 16s linear infinite;
+  -webkit-animation: scroll 16s linear infinite;
+  width: calc((100px + 20px) * 16);
+}
+.sliderTecnologies .slide {
+  width: 100px;
+}
+.sliderTecnologies .slide svg {
+  width: 100%;
+  height: auto;
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-120px * 8));
+    transform: translateX(calc(-120px * 8));
+  }
+} */
+
+.logos {
+  padding: 60px 0;
+  background: #fffffe !important;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* height: 200px; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.avatarImg {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: fill;
-  object-position: center;
 
-  border: 10px solid transparent;
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide svg {
+  width: 150px;
+  height: 50px;
+  margin: 0 40px;
+  /* filter: drop-shadow(0, 0, 0, 10px rgba(0, 0, 0, 0.5)); */
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
