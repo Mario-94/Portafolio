@@ -1,0 +1,33 @@
+@import "../styles/variable";
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-color: $background-color;
+  color: $paragraph-color;
+  font-size: 100%;
+  list-style-type: none;
+  padding: 1rem;
+}
+.container-page {
+  display: grid;
+  gap: 0px 0px;
+  grid-template-areas:
+    "navBar navBar navBar"
+    "main main main"
+    "footer footer footer";
+}
+.navBar {
+  grid-area: navBar;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
