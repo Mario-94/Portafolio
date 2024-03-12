@@ -1,6 +1,5 @@
 @import "../variable";
 .container-navBar {
-  //   background-color: $main-color;
   display: flex;
   justify-content: end;
   gap: 1em;
@@ -9,9 +8,9 @@
     text-decoration: none;
     color: $main-color;
     font-weight: bold;
-    // efecto hover
+
     &:hover {
-      color: $paragraph-color;
+      color: $secondary-color;
     }
   }
   @media (300px<= width <=767px) {

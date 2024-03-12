@@ -13,10 +13,12 @@ const Home = () => {
               Quae dolor fugiat delectus deleniti. Voluptas, facere corporis
               vero esse laudantium assumenda.
             </span>
-            <span>carrusel de tecnologias</span>
+            <button className="button-container">
+              <span>Conoceme</span>
+            </button>
           </div>
         </div>
-        <aside className="avatar-img ">
+        <div className="avatar-img">
           <div className="content-avatar">
             <img
               src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
@@ -24,7 +26,46 @@ const Home = () => {
               className="style-avatar-img"
             />
           </div>
-        </aside>
+        </div>
+
+        <div className="tecnologi">
+          <span className="carruselTec">
+            <img
+              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
+              alt=""
+            />
+          </span>
+          <span className="carruselTec">
+            <img
+              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
+              alt=""
+            />
+          </span>
+          <span className="carruselTec">
+            <img
+              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
+              alt=""
+            />
+          </span>
+          <span className="carruselTec">
+            <img
+              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
+              alt=""
+            />
+          </span>
+          <span className="carruselTec">
+            <img
+              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
+              alt=""
+            />
+          </span>
+          <span className="carruselTec">
+            <img
+              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
+              alt=""
+            />
+          </span>
+        </div>
       </section>
     </>
   );
