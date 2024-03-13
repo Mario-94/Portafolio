@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import { Route, Switch } from "wouter";
 import Experiences from "./views/Experiences";
 import Contact from "./views/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
             <Route path="/contact" component={Contact}></Route>
           </Switch>
         </div>
-        <footer className="footer">aqui va el footer</footer>
+        <footer className="footer">
+          <Footer />
+        </footer>
       </div>
     </>
   );

@@ -9,7 +9,7 @@
     color: $main-color;
     font-weight: bold;
     &:hover {
-      color: $secondary-color;
+      color: $button-color;
     }
   }
   @media (300px<= width <=767px) {
