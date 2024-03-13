@@ -8,24 +8,20 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
 body {
-  margin: 0;
   background-color: $background-color;
   color: $paragraph-color;
   font-size: 100%;
   list-style-type: none;
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
 }
-
 .container-page {
   display: grid;
   grid-template-areas:
     "navBar navBar navBar"
     "main main main"
     "footer footer footer";
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 .navBar {
@@ -40,4 +36,5 @@ body {
 
 .footer {
   grid-area: footer;
+  margin-top: auto;
 }
