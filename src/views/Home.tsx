@@ -1,3 +1,13 @@
+import {
+  IconCss,
+  IconHtml,
+  IconJavaScript,
+  IconMongoDb,
+  IconNodeJs,
+  IconReactJs,
+  IconSql,
+  IconTypeScript,
+} from "../assets/Icons";
 import "../styles/home.scss";
 const Home = () => {
   return (
@@ -30,40 +40,28 @@ const Home = () => {
 
         <div className="tecnologi">
           <span className="carruselTec">
-            <img
-              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
-              alt=""
-            />
+            <IconHtml />
           </span>
           <span className="carruselTec">
-            <img
-              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
-              alt=""
-            />
+            <IconCss />
           </span>
           <span className="carruselTec">
-            <img
-              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
-              alt=""
-            />
+            <IconJavaScript />
           </span>
           <span className="carruselTec">
-            <img
-              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
-              alt=""
-            />
+            <IconTypeScript />
           </span>
           <span className="carruselTec">
-            <img
-              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
-              alt=""
-            />
+            <IconReactJs />
           </span>
           <span className="carruselTec">
-            <img
-              src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg"
-              alt=""
-            />
+            <IconNodeJs />
+          </span>
+          <span className="carruselTec">
+            <IconSql />
+          </span>
+          <span className="carruselTec">
+            <IconMongoDb />
           </span>
         </div>
       </section>

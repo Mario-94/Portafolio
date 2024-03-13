@@ -6,9 +6,29 @@
   display: flex;
   justify-content: center;
   height: 80px;
+  padding-bottom: 1rem;
+  .liga {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    border-bottom: 1px solid $headline-color;
+    filter: drop-shadow(0 0 3px $headline-color);
 
-  padding: 0.5rem;
-  .style-linkedin {
-    object-fit: contain;
+    .icono-liga {
+      width: 100%;
+      height: 100%;
+      // margin: 10px;
+      padding: 10px;
+      object-fit: contain;
+    }
+  }
+  @media (300px <= width <=767px) {
+    .liga {
+      width: 30%;
+      height: 100%;
+    }
   }
 }
