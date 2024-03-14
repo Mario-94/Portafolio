@@ -11,6 +11,7 @@
     width: 100%;
     height: 100%;
     text-align: start;
+    padding: 1rem;
     h2 {
       color: $headline-color;
       padding-bottom: 1rem;
@@ -92,6 +93,7 @@
     display: flex;
     flex-direction: column;
     .textExperience {
+      padding: 0;
       padding-bottom: 1rem;
     }
     .content-experience {
