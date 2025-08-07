@@ -1,8 +1,8 @@
-import Home from "./views/Home";
+import Home from "./pages/views/Home";
 import NavBar from "./components/NavBar";
 import { Route, Switch } from "wouter";
-import Experiences from "./views/Experiences";
-import Contact from "./views/Contact";
+import Experiences from "./pages/views/Experiences";
+import Contact from "./pages/views/Contact";
 import Footer from "./components/Footer";
 
 function App() {

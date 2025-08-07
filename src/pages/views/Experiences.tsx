@@ -1,4 +1,3 @@
-import "../styles/experiences.scss";
 const Experiences = () => {
   return (
     <>

@@ -1,4 +1,3 @@
-import "../styles/navBar/navBar.scss";
 import { Link } from "wouter";
 
 const NavBar = () => {

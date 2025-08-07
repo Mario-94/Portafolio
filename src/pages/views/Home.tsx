@@ -7,13 +7,13 @@ import {
   IconReactJs,
   IconSql,
   IconTypeScript,
-} from "../assets/Icons";
-import "../styles/home.scss";
+} from "../../assets/Icons";
+
 const Home = () => {
   return (
     <>
       <section className="container-home">
-        <div className="container-description-person">
+        <div className="container-description-person border-2">
           <h1>Mario-94</h1>
           <div className="description-person">
             <p>Mario Alberto Garcia Sanchez</p>

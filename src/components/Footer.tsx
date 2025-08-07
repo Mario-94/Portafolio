@@ -1,6 +1,5 @@
 // import { Link } from "wouter";
 import { IconGithub, IconLinkedin } from "../assets/Icons";
-import "../styles/footer/footer.scss";
 
 const Footer = () => {
   return (
